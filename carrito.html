@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrito de Compras | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Carrito -->
+  <section class="cart-section">
+    <div class="cart-container">
+      <h1 class="cart-title">Carrito de Compras</h1>
+      
+      <div class="cart-content">
+        <!-- Lista de Productos -->
+        <div class="cart-items-container" id="cartItemsContainer">
+          <!-- Los productos se cargarán dinámicamente -->
+        </div>
+
+        <!-- Resumen del Carrito -->
+        <aside class="cart-summary">
+          <div class="summary-card">
+            <h2 class="summary-title">Resumen del Pedido</h2>
+            
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <span id="subtotal">$0.00 MXN</span>
+              </div>
+              <div class="summary-row">
+                <span>Envío</span>
+                <span id="shipping">$0.00 MXN</span>
+              </div>
+              <div class="summary-row discount">
+                <span>Descuento</span>
+                <span id="discount">-$0.00 MXN</span>
+              </div>
+              <div class="summary-divider"></div>
+              <div class="summary-row total">
+                <span>Total</span>
+                <span id="total">$0.00 MXN</span>
+              </div>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+              <i class="fas fa-lock"></i>
+              Proceder al Pago
+            </button>
+
+            <button class="continue-shopping-btn" onclick="window.location.href='productos.html'">
+              <i class="fas fa-arrow-left"></i>
+              Seguir Comprando
+            </button>
+          </div>
+
+          <div class="cart-promo">
+            <h3><i class="fas fa-gift"></i> Ofertas Especiales</h3>
+            <p>Envío gratis en compras mayores a $500 MXN</p>
+            <p>10% de descuento al comprar 3 o más productos</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/carrito.js"></script>
+</body>
+</html>
+

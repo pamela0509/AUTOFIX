@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Contacto | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Formulario de Contacto -->
+  <section class="contact-form-section">
+    <div class="contact-form-container">
+      <div class="contact-form-header">
+        <h1 class="contact-form-title">Formulario de Contacto</h1>
+        <p class="contact-form-subtitle">
+          ¿Necesitas ayuda? Estamos aquí para asistirte. Completa el formulario y nos pondremos en contacto contigo lo antes posible.
+        </p>
+      </div>
+
+      <div class="contact-form-content">
+        <!-- Información de Contacto -->
+        <aside class="contact-info-sidebar">
+          <div class="contact-info-card">
+            <h2 class="contact-info-title">Información de Contacto</h2>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-info-details">
+                <h3>Teléfono</h3>
+                <p>+52 (55) 1234-5678</p>
+                <p>Lun - Vie: 9:00 AM - 6:00 PM</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-details">
+                <h3>Email</h3>
+                <p>autofix.mx01@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-info-details">
+                <h3>Dirección</h3>
+                <p>Av. Reforma 123</p>
+                <p>Ciudad de México, CDMX 06600</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-info-details">
+                <h3>Horario de Atención</h3>
+                <p>Lunes - Viernes: 9:00 AM - 6:00 PM</p>
+                <p>Sábados: 10:00 AM - 2:00 PM</p>
+              </div>
+            </div>
+          </div>
+        </aside>
+
+        <!-- Formulario -->
+        <div class="contact-form-wrapper">
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="nombre">Nombre Completo <span class="required">*</span></label>
+              <input 
+                type="text" 
+                id="nombre" 
+                name="nombre" 
+                placeholder="Ingresa tu nombre completo"
+                required
+              />
+              <span class="error-message" id="nombreError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Correo Electrónico <span class="required">*</span></label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="tu@email.com"
+                required
+              />
+              <span class="error-message" id="emailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono <span class="required">*</span></label>
+              <input 
+                type="tel" 
+                id="telefono" 
+                name="telefono" 
+                placeholder="+52 (55) 1234-5678"
+                required
+              />
+              <span class="error-message" id="telefonoError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto <span class="required">*</span></label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="consulta-producto">Consulta sobre Producto</option>
+                <option value="soporte-tecnico">Soporte Técnico</option>
+                <option value="pedido">Consulta sobre Pedido</option>
+                <option value="devolucion">Devolución o Reembolso</option>
+                <option value="sugerencia">Sugerencia o Comentario</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="error-message" id="asuntoError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje <span class="required">*</span></label>
+              <textarea 
+                id="mensaje" 
+                name="mensaje" 
+                rows="6" 
+                placeholder="Escribe tu mensaje aquí..."
+                required
+              ></textarea>
+              <span class="error-message" id="mensajeError"></span>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="privacidad" name="privacidad" required />
+                <span>Acepto la <a href="#" class="privacy-link">política de privacidad</a> y el tratamiento de mis datos personales <span class="required">*</span></span>
+              </label>
+              <span class="error-message" id="privacidadError"></span>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="contact-submit-btn">
+                <i class="fas fa-paper-plane"></i>
+                Enviar Mensaje
+              </button>
+              <button type="reset" class="contact-reset-btn">
+                <i class="fas fa-redo"></i>
+                Limpiar Formulario
+              </button>
+            </div>
+
+            <div class="form-success-message" id="successMessage" style="display: none;">
+              <i class="fas fa-check-circle"></i>
+              <p>¡Mensaje enviado exitosamente! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contacto.js"></script>
+</body>
+</html>
+

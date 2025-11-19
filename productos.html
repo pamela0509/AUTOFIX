@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo Completo | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link active">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Catálogo Completo -->
+  <section class="catalog-section">
+    <div class="catalog-container">
+      <h1 class="catalog-title" id="catalog-title">Catálogo Completo de Productos</h1>
+      <p class="catalog-subtitle" id="catalog-subtitle">Explora nuestra amplia gama de refacciones y autopartes de calidad</p>
+      
+      <!-- Mensaje de resultados de búsqueda -->
+      <div id="search-results-info" class="search-results-info" style="display: none;">
+        <p id="search-results-text"></p>
+        <button id="clear-search-btn" class="clear-search-btn">Limpiar búsqueda</button>
+      </div>
+      
+      <!-- Grid de Productos (se llena dinámicamente) -->
+      <div class="products-grid catalog-grid" id="products-grid">
+        <!-- Los productos se cargarán dinámicamente mediante JavaScript -->
+      </div>
+
+      <!-- Paginación (opcional) -->
+      <div class="pagination">
+        <button class="pagination-btn active">1</button>
+        <button class="pagination-btn">2</button>
+        <button class="pagination-btn">3</button>
+        <button class="pagination-btn">Siguiente →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+

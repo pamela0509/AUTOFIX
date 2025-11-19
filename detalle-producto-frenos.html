@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit Frenos Traseros AP Racing | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Detalles del Producto -->
+  <section class="product-detail-section">
+    <div class="product-detail-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <a href="productos.html">Productos</a>
+        <span>/</span>
+        <span>Kit Frenos Traseros AP Racing</span>
+      </nav>
+
+      <div class="product-detail-content">
+        <!-- Imagen del Producto -->
+        <div class="product-detail-image">
+          <img src="https://rieraracing.com/wp-content/uploads/Joc-complet-darrera-1-1024x683.jpg" alt="Kit Frenos Traseros AP Racing" id="mainProductImage" />
+        </div>
+
+        <!-- Información del Producto -->
+        <div class="product-detail-info">
+          <div class="product-badge">Frenos</div>
+          <h1 class="product-detail-title">Kit Frenos Traseros AP Racing PRO 5000R 355x32mm</h1>
+          
+          <div class="product-rating">
+            <div class="stars-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-text">(4.9) - 18 reseñas</span>
+          </div>
+
+          <div class="product-price-section">
+            <span class="product-price">$1,550.00 MXN</span>
+            <span class="product-availability in-stock">
+              <i class="fas fa-check-circle"></i> En Stock
+            </span>
+          </div>
+
+          <div class="product-description">
+            <h3>Descripción</h3>
+            <p>
+              Kit de frenos traseros de alto rendimiento AP Racing PRO 5000R con discos de 355x32mm. 
+              Diseñado para vehículos de alto rendimiento que requieren un sistema de frenado superior. 
+              Este kit incluye discos ventilados de alta calidad, pastillas de freno de compuesto 
+              cerámico y todos los componentes necesarios para una instalación profesional.
+            </p>
+            <p>
+              Los discos AP Racing están fabricados con materiales de primera calidad que garantizan 
+              una excelente disipación de calor, reduciendo el riesgo de fade y mejorando la 
+              capacidad de frenado en condiciones extremas. Ideal para uso en pista y conducción 
+              deportiva.
+            </p>
+          </div>
+
+          <div class="product-specs">
+            <h3>Especificaciones</h3>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Marca:</span>
+                <span class="spec-value">AP Racing</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Compatibilidad:</span>
+                <span class="spec-value">Volkswagen Golf</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Año:</span>
+                <span class="spec-value">2007 - Presente</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Categoría:</span>
+                <span class="spec-value">Sistema de Frenos</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Diámetro Disco:</span>
+                <span class="spec-value">355mm x 32mm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Tipo:</span>
+                <span class="spec-value">Ventilado</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Garantía:</span>
+                <span class="spec-value">12 meses</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SKU:</span>
+                <span class="spec-value">APR-KIT-002</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <label>Cantidad:</label>
+              <div class="quantity-controls">
+                <button class="quantity-btn minus" id="quantityMinus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" id="productQuantity" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus" id="quantityPlus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <button class="add-to-cart-btn" id="addToCartBtn">
+              <i class="fas fa-shopping-cart"></i>
+              Agregar al Carrito
+            </button>
+          </div>
+
+          <div class="product-features">
+            <div class="feature-item">
+              <i class="fas fa-shipping-fast"></i>
+              <span>Envío gratis en compras mayores a $500</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Garantía de 12 meses</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-undo"></i>
+              <span>Devolución fácil en 30 días</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-headset"></i>
+              <span>Soporte técnico especializado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs de Información Adicional -->
+      <div class="product-tabs">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="details">Detalles</button>
+          <button class="tab-btn" data-tab="specifications">Especificaciones Técnicas</button>
+          <button class="tab-btn" data-tab="reviews">Reseñas</button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="details-tab">
+            <h3>Información Detallada</h3>
+            <p>
+              El Kit Frenos Traseros AP Racing PRO 5000R es un sistema de frenado de alto rendimiento 
+              diseñado para conductores que buscan la máxima capacidad de frenado y durabilidad. 
+              Este kit está especialmente diseñado para vehículos deportivos y de alto rendimiento.
+            </p>
+            <h4>Componentes Incluidos:</h4>
+            <ul>
+              <li>2 Discos de freno ventilados 355x32mm</li>
+              <li>Pastillas de freno de compuesto cerámico</li>
+              <li>Pernos y tornillos de montaje</li>
+              <li>Guías y clips de retención</li>
+              <li>Instrucciones de instalación detalladas</li>
+            </ul>
+            <h4>Beneficios:</h4>
+            <ul>
+              <li>Excelente capacidad de frenado en condiciones extremas</li>
+              <li>Reducción significativa del fade por calor</li>
+              <li>Mayor durabilidad que frenos estándar</li>
+              <li>Mejor disipación de calor</li>
+              <li>Diseño optimizado para alto rendimiento</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="specifications-tab">
+            <h3>Especificaciones Técnicas</h3>
+            <table class="specs-table">
+              <tr>
+                <td>Fabricante</td>
+                <td>AP Racing</td>
+              </tr>
+              <tr>
+                <td>Número de Parte</td>
+                <td>APR-KIT-002</td>
+              </tr>
+              <tr>
+                <td>Compatibilidad</td>
+                <td>Volkswagen Golf (2020)</td>
+              </tr>
+              <tr>
+                <td>Diámetro del Disco</td>
+                <td>355mm</td>
+              </tr>
+              <tr>
+                <td>Grosor del Disco</td>
+                <td>32mm</td>
+              </tr>
+              <tr>
+                <td>Tipo de Disco</td>
+                <td>Ventilado</td>
+              </tr>
+              <tr>
+                <td>Tipo de Pastillas</td>
+                <td>Cerámico de Alto Rendimiento</td>
+              </tr>
+              <tr>
+                <td>Material del Disco</td>
+                <td>Acero de Alta Resistencia</td>
+              </tr>
+              <tr>
+                <td>Garantía</td>
+                <td>12 meses</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-panel" id="reviews-tab">
+            <h3>Reseñas de Clientes</h3>
+            <div class="reviews-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Roberto Martínez</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">20 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Excelente kit de frenos, la diferencia en el frenado es notable. Los discos 
+                  disipan el calor muy bien y las pastillas tienen un agarre increíble. Perfecto 
+                  para uso en pista.
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Ana López</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">18 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Calidad profesional AP Racing. La instalación fue sencilla siguiendo las 
+                  instrucciones. El rendimiento es excepcional, especialmente en frenadas de 
+                  emergencia.
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Miguel Sánchez</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">12 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Muy buen producto, aunque el precio es elevado. La calidad justifica la inversión 
+                  si buscas alto rendimiento. Recomendado para vehículos deportivos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/detalle-producto-frenos.js"></script>
+</body>
+</html>
+

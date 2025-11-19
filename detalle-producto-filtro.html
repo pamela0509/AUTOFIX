@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filtro de Aceite Mann Filter | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Detalles del Producto -->
+  <section class="product-detail-section">
+    <div class="product-detail-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <a href="productos.html">Productos</a>
+        <span>/</span>
+        <span>Filtro de Aceite Mann Filter</span>
+      </nav>
+
+      <div class="product-detail-content">
+        <!-- Imagen del Producto -->
+        <div class="product-detail-image">
+          <img src="https://refaccionariamario.info/38544-tm_large_default/filtro-de-aceite-de-motor-mann-filter-para-jetta-a4-new-beetle-crafter-passat-b5-tdi.jpg" alt="Filtro de Aceite Mann Filter" id="mainProductImage" />
+        </div>
+
+        <!-- Información del Producto -->
+        <div class="product-detail-info">
+          <div class="product-badge">Filtros</div>
+          <h1 class="product-detail-title">Filtro de Aceite de Motor Mann Filter para Jetta A4, New Beetle, Crafter, Passat B5 TDI</h1>
+          
+          <div class="product-rating">
+            <div class="stars-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-text">(4.7) - 41 reseñas</span>
+          </div>
+
+          <div class="product-price-section">
+            <span class="product-price">$800.00 MXN</span>
+            <span class="product-availability in-stock">
+              <i class="fas fa-check-circle"></i> En Stock
+            </span>
+          </div>
+
+          <div class="product-description">
+            <h3>Descripción</h3>
+            <p>
+              Filtro de aceite de motor premium Mann Filter diseñado específicamente para vehículos 
+              Volkswagen con motores TDI. Compatible con Jetta A4, New Beetle, Crafter y Passat B5 
+              con motores diesel. Este filtro garantiza una filtración eficiente de impurezas y 
+              partículas, protegiendo el motor y prolongando su vida útil.
+            </p>
+            <p>
+              Mann Filter es una marca reconocida mundialmente por su calidad y confiabilidad. 
+              Este filtro está diseñado para cumplir con los estándares más exigentes de filtración, 
+              asegurando que el aceite del motor se mantenga limpio y libre de contaminantes que 
+              puedan dañar los componentes internos.
+            </p>
+          </div>
+
+          <div class="product-specs">
+            <h3>Especificaciones</h3>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Marca:</span>
+                <span class="spec-value">Mann Filter</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Compatibilidad:</span>
+                <span class="spec-value">Jetta A4, New Beetle, Crafter, Passat B5</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Año:</span>
+                <span class="spec-value">1998 - 2012</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Tipo de Motor:</span>
+                <span class="spec-value">TDI (Diesel)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Categoría:</span>
+                <span class="spec-value">Filtro de Aceite</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Tipo:</span>
+                <span class="spec-value">Cartucho de Filtración</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Garantía:</span>
+                <span class="spec-value">12 meses</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SKU:</span>
+                <span class="spec-value">MANN-FIL-004</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <label>Cantidad:</label>
+              <div class="quantity-controls">
+                <button class="quantity-btn minus" id="quantityMinus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" id="productQuantity" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus" id="quantityPlus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <button class="add-to-cart-btn" id="addToCartBtn">
+              <i class="fas fa-shopping-cart"></i>
+              Agregar al Carrito
+            </button>
+          </div>
+
+          <div class="product-features">
+            <div class="feature-item">
+              <i class="fas fa-shipping-fast"></i>
+              <span>Envío gratis en compras mayores a $500</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Garantía de 12 meses</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-undo"></i>
+              <span>Devolución fácil en 30 días</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-certificate"></i>
+              <span>Calidad OEM equivalente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs de Información Adicional -->
+      <div class="product-tabs">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="details">Detalles</button>
+          <button class="tab-btn" data-tab="specifications">Especificaciones Técnicas</button>
+          <button class="tab-btn" data-tab="reviews">Reseñas</button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="details-tab">
+            <h3>Información Detallada</h3>
+            <p>
+              El Filtro de Aceite Mann Filter es un componente esencial para el mantenimiento 
+              del motor de tu vehículo Volkswagen. Diseñado específicamente para motores TDI, 
+              este filtro proporciona una filtración superior que protege los componentes críticos 
+              del motor de desgaste prematuro.
+            </p>
+            <h4>Características Principales:</h4>
+            <ul>
+              <li>Filtración de alta eficiencia de partículas e impurezas</li>
+              <li>Diseño optimizado para motores diesel TDI</li>
+              <li>Resistencia a altas temperaturas y presiones</li>
+              <li>Materiales de primera calidad</li>
+              <li>Compatibilidad garantizada con modelos específicos</li>
+              <li>Fácil instalación y reemplazo</li>
+            </ul>
+            <h4>Beneficios:</h4>
+            <ul>
+              <li>Protección superior del motor contra desgaste</li>
+              <li>Mayor durabilidad del aceite del motor</li>
+              <li>Rendimiento óptimo del sistema de lubricación</li>
+              <li>Reducción de costos de mantenimiento a largo plazo</li>
+              <li>Calidad OEM equivalente a precio competitivo</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="specifications-tab">
+            <h3>Especificaciones Técnicas</h3>
+            <table class="specs-table">
+              <tr>
+                <td>Fabricante</td>
+                <td>Mann Filter</td>
+              </tr>
+              <tr>
+                <td>Número de Parte</td>
+                <td>MANN-FIL-004</td>
+              </tr>
+              <tr>
+                <td>Compatibilidad</td>
+                <td>VW Jetta A4, New Beetle, Crafter, Passat B5 TDI</td>
+              </tr>
+              <tr>
+                <td>Años de Compatibilidad</td>
+                <td>1998 - 2012</td>
+              </tr>
+              <tr>
+                <td>Tipo de Motor</td>
+                <td>TDI (Turbo Diesel Injection)</td>
+              </tr>
+              <tr>
+                <td>Tipo de Filtro</td>
+                <td>Cartucho de Filtración</td>
+              </tr>
+              <tr>
+                <td>Capacidad de Filtración</td>
+                <td>Alta Eficiencia</td>
+              </tr>
+              <tr>
+                <td>Resistencia a Temperatura</td>
+                <td>Hasta 120°C</td>
+              </tr>
+              <tr>
+                <td>Garantía</td>
+                <td>12 meses</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-panel" id="reviews-tab">
+            <h3>Reseñas de Clientes</h3>
+            <div class="reviews-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Fernando Torres</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">21 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Excelente filtro Mann Filter, calidad premium. Lo he usado en mi Jetta TDI 
+                  y funciona perfectamente. La filtración es excelente y el precio es justo. 
+                  Recomendado 100%.
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Patricia Morales</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">18 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Filtro de muy buena calidad, compatible perfectamente con mi Passat B5 TDI. 
+                  La instalación fue sencilla y el motor funciona perfectamente. Mann Filter 
+                  es una marca confiable.
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Ricardo Silva</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">14 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Buen filtro, calidad OEM. Lo uso en mi New Beetle TDI y cumple con las 
+                  expectativas. El precio es razonable para la calidad que ofrece. Recomendado 
+                  para mantenimiento regular.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/detalle-producto-filtro.js"></script>
+</body>
+</html>
+

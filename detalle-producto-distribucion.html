@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kit Distribución GM Aveo | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Detalles del Producto -->
+  <section class="product-detail-section">
+    <div class="product-detail-container">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb">
+        <a href="index.html">Inicio</a>
+        <span>/</span>
+        <a href="productos.html">Productos</a>
+        <span>/</span>
+        <span>Kit Distribución GM Aveo</span>
+      </nav>
+
+      <div class="product-detail-content">
+        <!-- Imagen del Producto -->
+        <div class="product-detail-image">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_659555-MLM71643202195_092023-O-kit-distribucion-gm-aveo-16-cbomba-agua-2008-2018.webp" alt="Kit Distribución GM Aveo" id="mainProductImage" />
+        </div>
+
+        <!-- Información del Producto -->
+        <div class="product-detail-info">
+          <div class="product-badge">Kit</div>
+          <h1 class="product-detail-title">Kit Distribución Gm Aveo 1.6 C/bomba Agua 2008 - 2018</h1>
+          
+          <div class="product-rating">
+            <div class="stars-rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-text">(4.6) - 32 reseñas</span>
+          </div>
+
+          <div class="product-price-section">
+            <span class="product-price">$650.00 MXN</span>
+            <span class="product-availability in-stock">
+              <i class="fas fa-check-circle"></i> En Stock
+            </span>
+          </div>
+
+          <div class="product-description">
+            <h3>Descripción</h3>
+            <p>
+              Kit completo de distribución para Chevrolet Aveo 1.6L que incluye bomba de agua. 
+              Este kit está diseñado para los modelos del 2008 al 2018 y contiene todos los 
+              componentes necesarios para realizar el cambio de distribución de manera profesional 
+              y segura.
+            </p>
+            <p>
+              El kit incluye correa de distribución de alta calidad, bomba de agua nueva, 
+              tensor y todos los componentes auxiliares necesarios. Fabricado con materiales 
+              de primera calidad que garantizan durabilidad y confiabilidad para tu vehículo.
+            </p>
+          </div>
+
+          <div class="product-specs">
+            <h3>Especificaciones</h3>
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Marca:</span>
+                <span class="spec-value">GM Original</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Compatibilidad:</span>
+                <span class="spec-value">Chevrolet Aveo</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Año:</span>
+                <span class="spec-value">2008 - 2018</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Motor:</span>
+                <span class="spec-value">1.6L</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Categoría:</span>
+                <span class="spec-value">Sistema de Distribución</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Incluye:</span>
+                <span class="spec-value">Correa, Bomba de Agua, Tensor</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Garantía:</span>
+                <span class="spec-value">12 meses</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">SKU:</span>
+                <span class="spec-value">GM-KIT-003</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-actions">
+            <div class="quantity-selector">
+              <label>Cantidad:</label>
+              <div class="quantity-controls">
+                <button class="quantity-btn minus" id="quantityMinus">
+                  <i class="fas fa-minus"></i>
+                </button>
+                <input type="number" id="productQuantity" value="1" min="1" class="quantity-input" />
+                <button class="quantity-btn plus" id="quantityPlus">
+                  <i class="fas fa-plus"></i>
+                </button>
+              </div>
+            </div>
+            <button class="add-to-cart-btn" id="addToCartBtn">
+              <i class="fas fa-shopping-cart"></i>
+              Agregar al Carrito
+            </button>
+          </div>
+
+          <div class="product-features">
+            <div class="feature-item">
+              <i class="fas fa-shipping-fast"></i>
+              <span>Envío gratis en compras mayores a $500</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-shield-alt"></i>
+              <span>Garantía de 12 meses</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-undo"></i>
+              <span>Devolución fácil en 30 días</span>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-tools"></i>
+              <span>Instalación profesional disponible</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tabs de Información Adicional -->
+      <div class="product-tabs">
+        <div class="tabs-header">
+          <button class="tab-btn active" data-tab="details">Detalles</button>
+          <button class="tab-btn" data-tab="specifications">Especificaciones Técnicas</button>
+          <button class="tab-btn" data-tab="reviews">Reseñas</button>
+        </div>
+
+        <div class="tabs-content">
+          <div class="tab-panel active" id="details-tab">
+            <h3>Información Detallada</h3>
+            <p>
+              El Kit de Distribución GM Aveo 1.6L con Bomba de Agua es un conjunto completo 
+              diseñado para mantener el sistema de distribución de tu vehículo en óptimas condiciones. 
+              Este kit es esencial para el mantenimiento preventivo del motor y garantiza el 
+              correcto funcionamiento del sistema de distribución.
+            </p>
+            <h4>Componentes Incluidos:</h4>
+            <ul>
+              <li>Correa de distribución de alta resistencia</li>
+              <li>Bomba de agua nueva (reemplazo completo)</li>
+              <li>Tensor de correa ajustable</li>
+              <li>Rodamientos y componentes auxiliares</li>
+              <li>Juntas y sellos necesarios</li>
+              <li>Instrucciones de instalación detalladas</li>
+            </ul>
+            <h4>Beneficios:</h4>
+            <ul>
+              <li>Previene fallas del motor por rotura de correa</li>
+              <li>Mantiene el sistema de refrigeración funcionando correctamente</li>
+              <li>Mayor durabilidad y confiabilidad</li>
+              <li>Instalación completa en un solo servicio</li>
+              <li>Compatibilidad garantizada con modelos 2008-2018</li>
+            </ul>
+          </div>
+
+          <div class="tab-panel" id="specifications-tab">
+            <h3>Especificaciones Técnicas</h3>
+            <table class="specs-table">
+              <tr>
+                <td>Fabricante</td>
+                <td>GM Original</td>
+              </tr>
+              <tr>
+                <td>Número de Parte</td>
+                <td>GM-KIT-003</td>
+              </tr>
+              <tr>
+                <td>Compatibilidad</td>
+                <td>Chevrolet Aveo 1.6L (2008-2018)</td>
+              </tr>
+              <tr>
+                <td>Motor</td>
+                <td>1.6L 4 Cilindros</td>
+              </tr>
+              <tr>
+                <td>Tipo de Correa</td>
+                <td>Correa de Distribución de Goma Reforzada</td>
+              </tr>
+              <tr>
+                <td>Bomba de Agua</td>
+                <td>Incluida (Nueva)</td>
+              </tr>
+              <tr>
+                <td>Tipo de Tensor</td>
+                <td>Ajustable Automático</td>
+              </tr>
+              <tr>
+                <td>Material</td>
+                <td>Componentes OEM Equivalentes</td>
+              </tr>
+              <tr>
+                <td>Garantía</td>
+                <td>12 meses</td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="tab-panel" id="reviews-tab">
+            <h3>Reseñas de Clientes</h3>
+            <div class="reviews-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>Carlos Ramírez</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">22 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Excelente kit, todo lo necesario para el cambio de distribución. La bomba de agua 
+                  incluida es de muy buena calidad. La instalación fue sencilla y el vehículo quedó 
+                  funcionando perfectamente.
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>María González</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">19 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Muy buena relación calidad-precio. El kit incluye todo lo necesario y los componentes 
+                  son de calidad original. Recomendado para quienes buscan hacer el mantenimiento 
+                  preventivo de su Aveo.
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <strong>José Hernández</strong>
+                    <div class="review-stars">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
+                  <span class="review-date">15 de Enero, 2025</span>
+                </div>
+                <p class="review-content">
+                  Kit completo y bien empaquetado. La instalación requiere conocimientos técnicos, 
+                  pero las instrucciones son claras. El precio es justo considerando que incluye la 
+                  bomba de agua.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/detalle-producto-distribucion.js"></script>
+</body>
+</html>
+

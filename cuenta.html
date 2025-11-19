@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi Cuenta | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link active">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Mi Cuenta -->
+  <section class="account-section">
+    <div class="account-container">
+      <h1 class="account-title">Mi Cuenta</h1>
+      
+      <div class="account-content">
+        <!-- Menú Lateral -->
+        <aside class="account-sidebar">
+          <div class="account-menu">
+            <button class="account-menu-item active" data-section="profile">
+              <i class="fas fa-user"></i>
+              <span>Información Personal</span>
+            </button>
+            <button class="account-menu-item" data-section="orders">
+              <i class="fas fa-shopping-bag"></i>
+              <span>Mis Pedidos</span>
+            </button>
+            <button class="account-menu-item" data-section="addresses">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Direcciones</span>
+            </button>
+            <button class="account-menu-item" data-section="settings">
+              <i class="fas fa-cog"></i>
+              <span>Configuración</span>
+            </button>
+            <button class="account-menu-item logout" data-section="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span>Cerrar Sesión</span>
+            </button>
+          </div>
+        </aside>
+
+        <!-- Contenido Principal -->
+        <main class="account-main">
+          <!-- Sección: Información Personal -->
+          <div class="account-panel active" id="profile-panel">
+            <h2 class="panel-title">Información Personal</h2>
+            <form class="account-form">
+              <div class="form-group">
+                <label for="firstName">Nombre</label>
+                <input type="text" id="firstName" name="firstName" value="Juan" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Apellidos</label>
+                <input type="text" id="lastName" name="lastName" value="Pérez García" />
+              </div>
+              <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" value="juan.perez@email.com" />
+              </div>
+              <div class="form-group">
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" value="+52 55 1234 5678" />
+              </div>
+              <div class="form-group">
+                <label for="birthdate">Fecha de Nacimiento</label>
+                <input type="date" id="birthdate" name="birthdate" value="1990-05-15" />
+              </div>
+              <button type="submit" class="account-btn primary">Guardar Cambios</button>
+            </form>
+          </div>
+
+          <!-- Sección: Mis Pedidos -->
+          <div class="account-panel" id="orders-panel">
+            <h2 class="panel-title">Mis Pedidos</h2>
+            <div class="orders-list">
+              <div class="order-card">
+                <div class="order-header">
+                  <div class="order-info">
+                    <span class="order-number">Pedido #12345</span>
+                    <span class="order-date">15 de Enero, 2025</span>
+                  </div>
+                  <span class="order-status delivered">Entregado</span>
+                </div>
+                <div class="order-items">
+                  <p>3 productos</p>
+                  <p class="order-total">Total: $1,250.00 MXN</p>
+                </div>
+                <button class="account-btn secondary">Ver Detalles</button>
+              </div>
+
+              <div class="order-card">
+                <div class="order-header">
+                  <div class="order-info">
+                    <span class="order-number">Pedido #12344</span>
+                    <span class="order-date">10 de Enero, 2025</span>
+                  </div>
+                  <span class="order-status shipping">En Tránsito</span>
+                </div>
+                <div class="order-items">
+                  <p>2 productos</p>
+                  <p class="order-total">Total: $850.00 MXN</p>
+                </div>
+                <button class="account-btn secondary">Rastrear Pedido</button>
+              </div>
+
+              <div class="order-card">
+                <div class="order-header">
+                  <div class="order-info">
+                    <span class="order-number">Pedido #12343</span>
+                    <span class="order-date">5 de Enero, 2025</span>
+                  </div>
+                  <span class="order-status processing">Procesando</span>
+                </div>
+                <div class="order-items">
+                  <p>1 producto</p>
+                  <p class="order-total">Total: $450.00 MXN</p>
+                </div>
+                <button class="account-btn secondary">Ver Detalles</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sección: Direcciones -->
+          <div class="account-panel" id="addresses-panel">
+            <h2 class="panel-title">Mis Direcciones</h2>
+            <div class="addresses-list">
+              <div class="address-card">
+                <div class="address-header">
+                  <h3>Casa</h3>
+                  <div class="address-actions">
+                    <button class="address-btn edit"><i class="fas fa-edit"></i> Editar</button>
+                    <button class="address-btn delete"><i class="fas fa-trash"></i> Eliminar</button>
+                  </div>
+                </div>
+                <div class="address-content">
+                  <p>Juan Pérez García</p>
+                  <p>Calle Principal #123</p>
+                  <p>Colonia Centro</p>
+                  <p>Ciudad de México, CDMX 06000</p>
+                  <p>Tel: +52 55 1234 5678</p>
+                </div>
+                <button class="account-btn secondary">Establecer como Principal</button>
+              </div>
+
+              <div class="address-card">
+                <div class="address-header">
+                  <h3>Trabajo</h3>
+                  <div class="address-actions">
+                    <button class="address-btn edit"><i class="fas fa-edit"></i> Editar</button>
+                    <button class="address-btn delete"><i class="fas fa-trash"></i> Eliminar</button>
+                  </div>
+                </div>
+                <div class="address-content">
+                  <p>Juan Pérez García</p>
+                  <p>Av. Reforma #456</p>
+                  <p>Colonia Juárez</p>
+                  <p>Ciudad de México, CDMX 06600</p>
+                  <p>Tel: +52 55 1234 5678</p>
+                </div>
+                <button class="account-btn secondary">Establecer como Principal</button>
+              </div>
+
+              <button class="account-btn primary add-address">
+                <i class="fas fa-plus"></i> Agregar Nueva Dirección
+              </button>
+            </div>
+          </div>
+
+          <!-- Sección: Configuración -->
+          <div class="account-panel" id="settings-panel">
+            <h2 class="panel-title">Configuración de Cuenta</h2>
+            <form class="account-form">
+              <div class="form-group">
+                <label for="currentPassword">Contraseña Actual</label>
+                <input type="password" id="currentPassword" name="currentPassword" />
+              </div>
+              <div class="form-group">
+                <label for="newPassword">Nueva Contraseña</label>
+                <input type="password" id="newPassword" name="newPassword" />
+              </div>
+              <div class="form-group">
+                <label for="confirmPassword">Confirmar Nueva Contraseña</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" />
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="emailNotifications" checked />
+                  <span>Recibir notificaciones por correo electrónico</span>
+                </label>
+              </div>
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="smsNotifications" />
+                  <span>Recibir notificaciones por SMS</span>
+                </label>
+              </div>
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter" checked />
+                  <span>Suscribirme al boletín de ofertas</span>
+                </label>
+              </div>
+              
+              <button type="submit" class="account-btn primary">Guardar Configuración</button>
+            </form>
+          </div>
+        </main>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/cuenta.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUTOFIX | Refacciones y Autopartes</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección 1: Carrusel Principal -->
+  <section class="hero-carousel-section">
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-slide active">
+          <div class="slide-content">
+            <h3>OFERTA ESPECIAL</h3>
+            <p>Hasta 30% de descuento en refacciones originales</p>
+            <button class="cta-button">VER OFERTAS</button>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="slide-content">
+            <h3>ENVÍO GRATIS</h3>
+            <p>En compras mayores a $500 MXN</p>
+            <button class="cta-button">COMPRAR AHORA</button>
+          </div>
+        </div>
+        <div class="carousel-slide">
+          <div class="slide-content">
+            <h3>NUEVOS PRODUCTOS</h3>
+            <p>Descubre las últimas autopartes disponibles</p>
+            <button class="cta-button">EXPLORAR</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-prev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="carousel-btn carousel-next" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="carousel-dots">
+        <span class="dot active" data-slide="0"></span>
+        <span class="dot" data-slide="1"></span>
+        <span class="dot" data-slide="2"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 2: Opiniones de Clientes -->
+  <section class="reviews-section">
+    <h2 class="section-title">OPINIÓN DE NUESTROS CLIENTES</h2>
+    <div class="rating-overview">
+      <div class="stars-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+    </div>
+    <div class="reviews-carousel-container">
+      <div class="reviews-carousel">
+        <div class="review-card active">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Excelente calidad en las refacciones. Llegaron a tiempo y funcionan perfectamente."</p>
+          <p class="review-product">Producto: Filtro de Aceite Premium</p>
+          <p class="review-author">- Juan Pérez</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+          </div>
+          <p class="review-text">"Muy buen servicio al cliente y productos originales. Recomendado 100%."</p>
+          <p class="review-product">Producto: Pastillas de Freno Delanteras</p>
+          <p class="review-author">- María González</p>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p class="review-text">"Buen precio y entrega rápida. El producto cumple con lo esperado."</p>
+          <p class="review-product">Producto: Batería 12V 60Ah</p>
+          <p class="review-author">- Carlos Rodríguez</p>
+        </div>
+      </div>
+      <button class="review-btn review-prev" aria-label="Anterior">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="review-btn review-next" aria-label="Siguiente">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Sección 3: Los Más Vendidos -->
+  <section class="bestsellers-section">
+    <h2 class="section-title">LOS MÁS VENDIDOS</h2>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://refaccionariamario.info/135194-tm_large_default/kit-de-afinacion-con-cambio-de-aceite-ac-delco-para-tornado-van-15l.jpg" alt="Producto" />
+        </div>
+        <h3 class="product-name">Kit de Afinación con Cambio de Aceite AC Delco para Tornado Van 1.5L</h3>
+        <button class="product-details-btn">DETALLES</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://rieraracing.com/wp-content/uploads/Joc-complet-darrera-1-1024x683.jpg" alt="Producto" />
+        </div>
+        <h3 class="product-name">Kit Frenos Traseros AP Racing PRO 5000R 355x32mm</h3>
+        <button class="product-details-btn">DETALLES</button>
+      </div>
+      <div class="product-card">
+        <div class="product-image">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_659555-MLM71643202195_092023-O-kit-distribucion-gm-aveo-16-cbomba-agua-2008-2018.webp" alt="Producto" />
+        </div>
+        <h3 class="product-name">Kit Distribucion Gm Aveo 1.6 C/bomba Agua 2008 - 2018</h3>
+        <button class="product-details-btn">DETALLES</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección 4: Contacto -->
+  <section class="contact-section">
+    <h2 class="section-title">CONTÁCTANOS</h2>
+    <p class="contact-text">
+      ¿Necesitas ayuda para encontrar la refacción perfecta para tu vehículo? 
+      Nuestro equipo de expertos está listo para asistirte. Contáctanos y te ayudaremos 
+      a encontrar exactamente lo que buscas.
+    </p>
+    <div class="contact-actions">
+      <a href="contacto.html" class="contact-btn">FORMULARIO DE CONTACTO</a>
+      <button class="contact-btn secondary">LLÁMANOS</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

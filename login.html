@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión | AUTOFIX</title>
+  <link rel="stylesheet" href="CSS/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="img/Autofix.png" alt="AUTOFIX Logo" />
+        </a>
+      </div>
+
+      <!-- Barra de Búsqueda -->
+      <div class="header-search">
+        <input type="text" placeholder="Buscar refacciones..." class="search-input" />
+        <button class="search-btn">BUSCAR</button>
+      </div>
+
+      <!-- Acciones de Usuario -->
+      <div class="header-actions">
+        <a href="productos.html" class="action-link">TODOS LOS PRODUCTOS</a>
+        <a href="cuenta.html" class="action-link">TU CUENTA</a>
+        <a href="login.html" class="action-link active">INICIAR SESIÓN</a>
+        <a href="carrito.html" class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sección Principal: Iniciar Sesión -->
+  <section class="login-section">
+    <div class="login-container">
+      <div class="login-card">
+        <div class="login-header">
+          <h1 class="login-title">Iniciar Sesión</h1>
+          <p class="login-subtitle">Ingresa a tu cuenta para continuar</p>
+        </div>
+
+        <form class="login-form" id="loginForm">
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <div class="input-wrapper">
+              <i class="fas fa-envelope input-icon"></i>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                placeholder="tu@email.com" 
+                required 
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <div class="input-wrapper">
+              <i class="fas fa-lock input-icon"></i>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                placeholder="Ingresa tu contraseña" 
+                required 
+              />
+              <button type="button" class="password-toggle" id="passwordToggle">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox" name="remember" />
+              <span>Recordarme</span>
+            </label>
+            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
+          </div>
+
+          <button type="submit" class="login-btn">
+            <span>Iniciar Sesión</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="login-divider">
+          <span>o</span>
+        </div>
+
+        <div class="social-login">
+          <button class="social-btn google">
+            <i class="fab fa-google"></i>
+            <span>Continuar con Google</span>
+          </button>
+          <button class="social-btn facebook">
+            <i class="fab fa-facebook-f"></i>
+            <span>Continuar con Facebook</span>
+          </button>
+        </div>
+
+        <div class="login-footer">
+          <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+        </div>
+      </div>
+
+      <!-- Panel de Información -->
+      <div class="login-info">
+        <div class="info-content">
+          <h2>Bienvenido de nuevo</h2>
+          <p>Accede a tu cuenta AUTOFIX para:</p>
+          <ul class="info-list">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Ver y rastrear tus pedidos</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Gestionar tus direcciones de envío</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Guardar tus productos favoritos</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Acceder a ofertas exclusivas</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Historial completo de compras</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <p>&copy; 2025 AUTOFIX. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/login.js"></script>
+</body>
+</html>
+
